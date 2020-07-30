@@ -12,3 +12,22 @@ In the demo scenes, pole object is in yellow, and target object is in red. The e
 If the target object is out of reach, the dashed line will become red.
 
 ![alt text](https://github.com/arcsinxdx/VerySimpleIK/blob/master/ik2.gif)
+
+# How It Works
+1. **Traverse Backwards:** Update optimised position from leaf joint to root joint.
+2. **Traverse Forwards:** Update optimised position from root joint to leaf joint.
+3. **MoveTowardsPole:** Bend the IK chain to the pole object, if the pole is present.
+4. **ApplyChangesToJoints:** Put the joints into their desired position.
+5. Repeat 1 to 4 until we have a good approximation (in this case, we repeat for a fixed number of iterations, assigned in the inspector).
+
+# Terminology
+**Joint:** a component that connects to other joint (bone).
+**Root joint:** the beginning of an IK chain. The 0th joint in the chain. 
+**Leaf joint:** the end of an IK chain. The nth joint in the chain.
+**IK chain:** aseries of linearly linked N joint, starting from root joint, ending at leaf joint. Numerated in0,1,2,...,N.
+**End effector (target):** a point where we wish the leaf joint can reach. 
+**Pole:** a point where we want the IK chain to bend to.
+
+# References
+FABRIK (Inverse kinematics) - https://youtu.be/UNoX65PRehA
+C# Inverse Kinematics in Unity - https://youtu.be/qqOAzn05fvk
