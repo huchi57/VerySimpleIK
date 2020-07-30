@@ -1,5 +1,6 @@
 # VerySimpleIK
-A very simple IK system using FABRIK (forward and backward reaching inverse kinematics) with simple editor outlines visualization.
+A very simplem, one-script IK system using FABRIK (forward and backward reaching inverse kinematics) with simple editor outlines visualization.
+This is a work in progress, so there may be bugs.
 
 ![alt text](https://github.com/arcsinxdx/VerySimpleIK/blob/master/ik1.gif)
 
