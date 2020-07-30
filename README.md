@@ -23,12 +23,18 @@ View full comments in source code [FABRIKRoot.cs](https://github.com/arcsinxdx/V
 
 # Terminology
 **Joint:** a component that connects to other joint (bone).
+
 **Root joint:** the beginning of an IK chain. The 0th joint in the chain. 
+
 **Leaf joint:** the end of an IK chain. The nth joint in the chain.
+
 **IK chain:** aseries of linearly linked N joint, starting from root joint, ending at leaf joint. Numerated in0,1,2,...,N.
+
 **End effector (target):** a point where we wish the leaf joint can reach. 
+
 **Pole:** a point where we want the IK chain to bend to.
 
 # References
 FABRIK (Inverse kinematics) - https://youtu.be/UNoX65PRehA
+
 C# Inverse Kinematics in Unity - https://youtu.be/qqOAzn05fvk
