@@ -14,6 +14,7 @@ If the target object is out of reach, the dashed line will become red.
 ![alt text](https://github.com/arcsinxdx/VerySimpleIK/blob/master/ik2.gif)
 
 # How It Works
+View full comments in source code [FABRIKRoot.cs](IKTest/FABRIKROOT.cs).
 1. **Traverse Backwards:** Update optimised position from leaf joint to root joint.
 2. **Traverse Forwards:** Update optimised position from root joint to leaf joint.
 3. **MoveTowardsPole:** Bend the IK chain to the pole object, if the pole is present.
