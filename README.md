@@ -15,10 +15,10 @@ If the target object is out of reach, the dashed line will become red.
 
 # How It Works
 View full comments in source code [FABRIKRoot.cs](https://github.com/arcsinxdx/VerySimpleIK/blob/master/IKTest/FABRIKRoot.cs).
-1. **Traverse Backwards:** Update optimised position from leaf joint to root joint.
-2. **Traverse Forwards:** Update optimised position from root joint to leaf joint.
-3. **MoveTowardsPole:** Bend the IK chain to the pole object, if the pole is present.
-4. **ApplyChangesToJoints:** Put the joints into their desired position.
+1. **TraverseBackwards():** Update optimised position from leaf joint to root joint.
+2. **TraverseForwards():** Update optimised position from root joint to leaf joint.
+3. **MoveTowardsPole():** Bend the IK chain to the pole object, if the pole is present.
+4. **ApplyChangesToJoints():** Put the joints into their desired position.
 5. Repeat 1 to 4 until we have a good approximation (in this case, we repeat for a fixed number of iterations, assigned in the inspector).
 
 # Terminology
